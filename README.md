@@ -1,2 +1,2 @@
-# mega-audio
+# Mega-Audio
 Created with CodeSandbox
