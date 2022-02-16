@@ -47,6 +47,7 @@ nav {
 
 nav img {
   height: 40px;
+  pointer-events: auto;
 }
 
 .menubtn {

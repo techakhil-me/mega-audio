@@ -110,7 +110,8 @@ section.three img {
 
 section.four {
   display: flex;
-  padding-top: 40vw;
+  padding: 0 40px;
+  padding-top: 65vw;
 }
 
 .four__left {
@@ -120,7 +121,7 @@ section.four {
   text-align: center;
 }
 .four__left .text {
-  max-width: 400px;
+  max-width: 600px;
 }
 .four__left .title span {
   font-size: 64px;
@@ -129,6 +130,19 @@ section.four {
   width: 100%;
   max-width: 400px;
 }
+.four__right {
+  padding-top: 100px;
+  width: 100%;
+  max-width: none;
+  position: relative;
+}
+.four__right img {
+  width: 100%;
+  max-width: none;
+  position: relative;
+  left: 20%;
+}
+
 @media (max-width: 1080px) {
   .hero_text {
     font-size: 96px;
@@ -163,7 +177,7 @@ section.four {
     text-align: center;
   }
   section.two {
-    padding-top: 60px;
+    padding-top: 80px;
     height: 100%;
     flex-direction: column;
     align-items: center;
@@ -173,7 +187,7 @@ section.four {
     max-width: 100%;
   }
   section.three {
-    padding-top: 60px;
+    padding-top: 120px;
   }
   section.three .hero_text {
     padding: 0;
@@ -184,5 +198,11 @@ section.four {
   }
   .four__left .title span {
     font-size: 32px;
+  }
+  section.four {
+    display: flex;
+    padding: 0 40px;
+    padding-top: 80px;
+    flex-direction: column;
   }
 }
