@@ -1,3 +1,75 @@
+/* float */
+@keyframes float {
+  0% {
+    transform: translateX(-50%) translatey(-10px);
+  }
+  100% {
+    transform: translateX(-50%) translatey(10px);
+  }
+}
+
+/* wobble */
+.wobble-hor-bottom {
+  -webkit-animation: wobble-hor-bottom 0.8s both infinite;
+  animation: wobble-hor-bottom 0.8s both infinite;
+}
+
+@-webkit-keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  15% {
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  45% {
+    -webkit-transform: rotate(-3.6deg);
+    transform: rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: t rotate(2.4deg);
+    transform: rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1.2deg);
+    transform: rotate(-1.2deg);
+  }
+}
+@keyframes wobble-hor-bottom {
+  0%,
+  100% {
+    -webkit-transform-origin: 50% 100%;
+    transform-origin: 50% 100%;
+  }
+  15% {
+    -webkit-transform: rotate(-6deg);
+    transform: rotate(-6deg);
+  }
+  30% {
+    -webkit-transform: rotate(6deg);
+    transform: rotate(6deg);
+  }
+  45% {
+    -webkit-transform: rotate(-3.6deg);
+    transform: rotate(-3.6deg);
+  }
+  60% {
+    -webkit-transform: t rotate(2.4deg);
+    transform: rotate(2.4deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1.2deg);
+    transform: rotate(-1.2deg);
+  }
+}
+
+/* glitch */
 .glitch {
   position: relative;
 }
@@ -380,13 +452,4 @@
 .glitch::after {
   animation: paths 5s step-end infinite, opacity 5s step-end infinite,
     font 7s step-end infinite, movement 8s step-end infinite;
-}
-
-@keyframes float {
-  0% {
-    transform: translateX(-50%) translatey(-10px);
-  }
-  100% {
-    transform: translateX(-50%) translatey(10px);
-  }
 }
