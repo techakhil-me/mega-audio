@@ -1,3 +1,14 @@
+/* shine */
+
+@keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+  to {
+    -webkit-mask-position: -50%;
+  }
+}
+
 /* float */
 @keyframes float {
   0% {

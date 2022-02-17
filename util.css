@@ -33,6 +33,40 @@ body {
 .text {
   font-size: 18px;
 }
+
+.loading {
+  position: fixed;
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  background: #161616;
+  z-index: 99;
+  transition: opacity 1s ease-in-out;
+}
+.complete {
+  opacity: 0;
+}
+.remove-loading {
+  display: none;
+}
+.loading div:first-child {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.loading div:first-child svg {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.1) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.1) 90%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 3s linear infinite;
+}
 /* nav */
 nav {
   max-width: 1536px;
