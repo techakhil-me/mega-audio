@@ -1,16 +1,15 @@
 // loading
-document.querySelector("img").onload = () =>
-  setTimeout(() => {
+setTimeout(() => {
     let loader = document.querySelector(".loading");
     loader.classList.toggle("complete");
     loader.addEventListener(
       "transitionend",
       () => {
-        loader.classList.toggle("remove-loading");
+        loader.remove()
       },
       false
     );
-  }, 2000);
+  }, 3000);
 
 //  toggle navbar
 function toggleMenu(el) {
