@@ -1,0 +1,121 @@
+section.hero {
+  position: relative;
+  padding: 0 40px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero_text {
+  text-align: center;
+  color: #08ddce;
+  font-weight: bold;
+  font-size: 144px;
+  line-height: 144px;
+  letter-spacing: 10px;
+  text-shadow: 0px 0px 20px #08ddce;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.marquee_container {
+  overflow-x: hidden;
+  width: 100vw;
+  /* position: relative; */
+  display: flex;
+  gap: 100px;
+  height: 300px;
+}
+.box_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 200px;
+  max-width: 200px;
+  animation: marquee 10s linear infinite alternate;
+}
+.box_item .text {
+  white-space: pre-wrap; /* Webkit */
+  white-space: -moz-pre-wrap; /* Firefox */
+  white-space: -pre-wrap; /* Opera <7 */
+  white-space: -o-pre-wrap; /* Opera 7 */
+  word-wrap: break-word;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  word-wrap: break-word;
+}
+
+section.two {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 40px;
+  width: 100%;
+  gap: 40px;
+}
+
+.accordian {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 58px;
+  transition: max-height 0.3s ease-in-out;
+}
+.accordian-open {
+  max-height: 300px;
+}
+.accordian__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.accordian__title svg {
+  cursor: pointer;
+}
+.accordian__title svg path {
+  transition: all 0.3s ease-in-out;
+  transform-origin: 50% 50%;
+}
+
+.minus {
+  transform: scaleY(0);
+}
+.accordian__desc {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.accordian__desc div span {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(calc(-1460px + 100vw), 0);
+  }
+}
+@media (max-width: 1080px) {
+  .hero_text {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
+@media (max-width: 768px) {
+  .hero_text {
+    position: static;
+    font-size: 32px;
+    line-height: 34px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+}

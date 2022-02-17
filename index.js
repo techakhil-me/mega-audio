@@ -4,6 +4,10 @@ function toggleMenu(el) {
   document.querySelector(".openmenu").classList.toggle("closemenu");
   document.querySelector("nav").classList.toggle("invert");
 }
-// animate hero image
-const heroImage = document.querySelector(".heroImage")
-setInterval(()=>{},)
+
+// toggle accordian
+function toggleAccordian(el) {
+  console.log()
+  el.firstElementChild.classList.toggle("minus")
+  el.parentElement.parentElement.classList.toggle("accordian-open");
+}
