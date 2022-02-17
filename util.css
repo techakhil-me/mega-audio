@@ -10,6 +10,10 @@
 html {
   overflow-x: hidden;
 }
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
 a {
   text-decoration: none;
   color: inherit;
