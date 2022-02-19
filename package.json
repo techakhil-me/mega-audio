@@ -14,7 +14,7 @@
   "author": "TechAkhil",
   "license": "MIT",
 
-  "homepage": "https://techakhil-me.github.io/mega-audio/",
+  "homepage": "./mega-audio",
   "devDependencies": {
     "serve": "^11.2.0"
   }
