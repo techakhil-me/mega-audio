@@ -1,4 +1,4 @@
-{"homepage": '.',
+{ 
   "name": "static",
   "version": "1.0.0",
   "description": "Mega-Audio Premium quality devices",
@@ -14,7 +14,7 @@
   "author": "TechAkhil",
   "license": "MIT",
 
-  "homepage": "https://github.com/codesandbox-app/static-template#readme",
+  "homepage": ".",
   "devDependencies": {
     "serve": "^11.2.0"
   }
