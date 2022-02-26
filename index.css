@@ -83,6 +83,72 @@ section.two img {
   max-height: 100vh;
   /* max-width: 80%; */
 }
+
+/* section three */
+section.three {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+section.three .hero_text {
+  padding-top: 24vw;
+  position: static;
+  transform: none;
+  z-index: 8;
+}
+section.three .text {
+  max-width: 500px;
+}
+section.three img {
+  z-index: 10;
+  width: 100%;
+  position: absolute;
+}
+
+section.four {
+  display: flex;
+  padding: 0 40px;
+  padding-top: 65vw;
+}
+
+.four__left {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.four__left .text {
+  max-width: 600px;
+}
+.four__left .title span {
+  font-size: 64px;
+}
+.four__left img {
+  width: 100%;
+  max-width: 400px;
+}
+.four__right {
+  padding-top: 100px;
+  width: 100%;
+  max-width: none;
+  position: relative;
+}
+.four__right img {
+  width: 100%;
+  max-width: none;
+  position: relative;
+  left: 20%;
+}
+
+@media (max-width: 1080px) {
+  .hero_text {
+    font-size: 96px;
+    line-height: 96px;
+  }
+}
 @media (max-width: 768px) {
   .hero {
     height: 100%;
